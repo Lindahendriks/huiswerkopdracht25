@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <title>Hallo welkom op mijn Pagina</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    body{
+     width: 100%;
+     height: 500px;
+     background-color:beige;
+     font-size: 10pt;
+     color: pink;
+     text-indent:30px
+     }
+    header,footer{
+     width: 75%;
+     height: 50px;
+     background-color:pink;
+     font-size: 20pt;
+     color: white;
+     text-indent:30px
+   </style>
+   <script src="http://code.jquery.com/jquery-3.1.0.min.js">
+   </script>
+   <script type="text/javascript">
+    $(document).ready(function() {
+    $("#hide").click(function() {
+    $("p").fadeOut();
+    });
+    $("#show").click(function() {
+    $("p").fadeIn();
+    });
+    });
+    </script>
+
+  </head>
+  <body>
+   <header> Welkom op de pagina waarom moet ik de opleiding Webdesign volgen  </header>
+    <br>
+    <button id="hide">weg</button>
+    <button id="show">kom terug</button>
+      <p> Met deze knoppen kan je er voor zorgen dat de tekst verdwijnt maar ook weer terug kan verschijnen. Dit word gedaan met de functies Fadein en Fadeout.<br>
+          Wil je ook weten hoe dat moet volg de cursus webdeisgn van NHA </p>
+    <noscript>
+      Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+    </noscript>
+      <br>
+      <br>
+  <footer>Tot ziens <a href="https://www.nha.nl">NHA</a>
+  </footer>
+</body>
+</html>
